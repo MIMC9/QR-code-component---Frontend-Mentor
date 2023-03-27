@@ -6,28 +6,33 @@
 body {
     background-color: hsl(212, 45%, 89%);
     font-family: 'Outfit';
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    width: 85%;
+    max-width: 20rem;
     background-color: hsl(0, 0%, 100%);
+    padding: 1rem;
     margin: 0 auto;
-    
     align-items: center;
     border-radius: 20px;
 }
 
 .qrcode {
-    width: 90%;
-    margin: 20px 0 28px 0;
+    max-width: 100%;
     border-radius: 15px;
 }
 
 .title {
-    margin: 0 30px 20px 30px;
-    font-size: 1.6rem;
+    margin: 30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
     text-align: center;
     font-weight: 700;
     color: hsl(218, 44%, 22%);
@@ -36,16 +41,17 @@ body {
 .text {
     font-size: 15px;
     color: hsl(220, 15%, 55%);
-    margin: 0 45px 40px 45px;
+    margin: 0 35px 0 35px;
+    margin-bottom: 25px;
     text-align: center;
     font-weight: 400;
 }
 
-@media only screen and (min-width: 375px) {
+/* @media only screen and (min-width: 375px) {
     .card {
         min-width: 350px;
         width: 20%;
         max-width: 350px;
         margin-top: 80px;
-    }
+    } */
 }
